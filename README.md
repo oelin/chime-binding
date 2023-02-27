@@ -1,6 +1,6 @@
 # chime-binding
 
-Chime plugin for bidirectional data-binding between elements and Variable objects.
+Chime plugin for bidirectional data-binding between elements and Variable objects. Still in beta.
 
 
 ## Installation
@@ -18,7 +18,7 @@ Reactive form example.
 import { Element, use } from 'chime'
 import binding, { Variable } from 'chime-binding'
 
-use('binding', binding) // Load the plugin.
+use('attribute', binding) // Overload the default attribute plugin.
 
 
 function App() {
@@ -26,10 +26,10 @@ function App() {
     
     return Element('div')
         .Element('input')
-            .binding('value', username) // Bind value to username.
+            .attribute('value', username) // Bind value to username.
             .end()
         .Element('h1')
-            .binding('innerText', username) // Bind innerText to username.
+            .attribute('innerText', username) // Bind innerText to username.
             .top()
 }
 ```
