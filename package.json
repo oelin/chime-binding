@@ -1,0 +1,8 @@
+{
+  "name": "chime-binding",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Chime plugin for bidirectional data-binding between elements and Variable objects.",
+  "type": "module",
+  "main": "index.js",
+}
